@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+    margin: 20px auto;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+  
+  button:hover:enabled {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Textarea - Centered */
+  textarea {
+    width: calc(100% - 40px); /* Ensure it fits well with padding */
+    height: 150px;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    resize: none;
+    display: block;
+    margin: 20px auto;
+    box-sizing: border-box; /* Prevent overflow */
+  }
+  
+  /* Hidden Buttons Initially */
+  button#exportBtn,
+  button#copyBtn {
+    display: none;
+  }
+  
+  
+  /* Compact Footer with Background */
+footer {
+    background-color: #1e1e1e; /* Dark background */
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem; /* Smaller font size */
+    padding: 10px 0; /* Reduce padding */
+    margin-top: auto;
+    border-top: 1px solid #00bcd4; /* Subtle border */
+  }
+  
+  /* Footer Links */
+  footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #007bff;
+  }
+ hr {
+    background-color: red;;
+ }  
+  
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); }
+    to { transform: translateY(0); }
+  }
+  

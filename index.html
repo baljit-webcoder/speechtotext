@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.webp" type="image/x-icon" />
+  <title>Live Speech to Text</title>
+</head>
+<body>
+  <div class="container">
+    <h1>🎙️ Live Speech to Text</h1>
+    <div class="button-group">
+      <button id="startBtn">▶ Start</button>
+      <button id="stopBtn" disabled>⏹ Stop</button>
+    </div>
+    <textarea id="output" placeholder="(Transcribed text will appear here)" readonly></textarea>
+    <div class="button-group">
+      <button id="exportBtn">💾 Export as .txt</button>
+      <button id="copyBtn">📋 Copy to Clipboard</button>
+    </div>
+  </div>
+  <footer>
+    <p>
+      &copy; 2025 Baljit Panda | 
+      <a href="https://github.com/baljit-webcoder/speechtotext" target="_blank">🔗 View Project on GitHub</a> | 
+      <a href="requirements.html">📄 View Requirements and Supported Browsers</a>
+    </p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
